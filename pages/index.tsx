@@ -8,7 +8,8 @@ export default function Home() {
   // walletConnected keep track of whether the user's wallet is connected or not
   const [walletConnected, setWalletConnected] = useState(false);
   // Create a reference to the Web3 Modal (used for connecting to Metamask) which persists as long as the page is open
-  const web3ModalRef = useRef();
+  const web3ModalRef = useRef<any>();
+
   // ENS
   const [ens, setENS] = useState("");
   // Save the address of the currently connected contract
